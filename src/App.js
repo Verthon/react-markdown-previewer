@@ -8,8 +8,8 @@ class App extends Component {
 
   };
 
-  inputHandler = () =>{
-
+  inputHandler = (e) =>{
+    console.log(e.target.value);
   }
 
   render() {
@@ -18,7 +18,7 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">React Markdown Previewer</h1>
         </header>
-        <Input changed={inputHandler}/>
+        <Input changed={this.inputHandler}/>
         <Output/>
       </div>
     );
