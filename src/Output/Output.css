@@ -1,0 +1,5 @@
+.Output{
+  display: flex;
+  flex-basis: 100%;
+  height: 500px;
+}

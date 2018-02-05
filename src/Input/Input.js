@@ -3,7 +3,7 @@ import './Input.css';
 
 const Input = (props) => {
   return (
-    <textarea name="" id="" cols="30" rows="10" onChange={props.changed}></textarea>
+    <textarea name="" id="" cols="30" rows="10" value={props.value}onChange={props.changed}></textarea>
   );
 }
 
