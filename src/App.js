@@ -34,11 +34,13 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">React Markdown Previewer</h1>
+        <h1 className="App-title">React Markdown Previewer</h1>
         </header>
-        <Input changed={this.inputHandler} markdown={this.state.markdown}/>
-        <Output/>
-        <div dangerouslySetInnerHTML={{__html: marked(this.state.markdown)}}></div>
+        <main className="App-content">
+          <Input changed={this.inputHandler} markdown={this.state.markdown}/>
+          <Output></Output>
+          <div dangerouslySetInnerHTML={{__html: marked(this.state.markdown)}}></div>
+        </main>
       </div>
     );
   }

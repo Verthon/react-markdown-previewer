@@ -3,7 +3,7 @@ import './Output.css';
 
 const Output = (props) => {
   return (
-    <div className="Output">{props.data}</div>
+    <div className="Output"></div>
   );
 }
 
